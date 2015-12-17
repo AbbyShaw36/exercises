@@ -1,0 +1,114 @@
+/*page*/
+.page-top h2 { margin: 0; text-align: center; }
+.page-top p { width: 50%; margin: 1em auto 2em; text-align: center; font-size: 14px; }
+
+.error { margin: 5em 0; text-align: center; }
+.error h2 { margin: 0; font-size: 12em; font-weight: 700; color: #9cc303; }
+.error h2 span { color: #3d3d3d; }
+.error p span { display: block; margin: 1em 0; color: #9cc303; }
+
+/*home*/
+#home .section1 .more1 { position: absolute; top: 70%; left: 10%; }
+
+#home .section2 { width: 75%; padding: 0 1em; }
+#home .section2 .imgBox { float: left; width: 33%; padding: 10px; }
+#home .section2 .content { float: right; width: 66%; }
+#home .section2 article { margin-bottom: 2em; }
+#home .section2 article:last-child { margin-bottom: 0; }
+#home .section2 h3 { color: #9cc303; }
+
+#home .events { width: 22%; margin: 0 15px; padding: 1em; background: #eaeaea; }
+#home .events h2 { color: #728d09; }
+#home .events li { padding-top: 1em; border-bottom: 1px dashed #000; }
+#home .events h3 { margin: 0; font-weight: normal; }
+#home .events h3 a { font-size: 17px; transition: all 0.5s; }
+#home .events p { margin: 0; margin-bottom: 1em;  font-size: 12px; color: #939191; }
+#home .events time { display: inline-block; padding: 0.6em; width: 68px; height: 68px; border-radius: 68px; background: #9cc303; text-align: center; color: #fff; }
+#home .events .all { margin: 3em 0 2em; text-align: center; }
+
+#home .imgList-box { width: 100%; overflow: hidden; }
+#home .imgList { position: relative; padding: 1em 0; background: #eaefc5; }
+#home .imgList ul { width: 200%; }
+#home .imgList li { position: relative; width: 12.5%; padding: 0 0.5em; }
+#home .imgList li img { width: 100%; }
+#home .imgList a { color: #000; }
+#home .imgList span { position: absolute; top: 60%; padding: 10px; background: #fff; }
+
+#home .toleft ,.toright { position: absolute; top: 20%; z-index: 2; width: 60px ; height: 115px; background: url(img/3.png) no-repeat; cursor: pointer; }
+#home .toright { right: -3em; background-position: -66px 0; }
+
+/*about*/
+#about article h2 { font-size: 20px; }
+#about article p {color: #47443A; }
+#about article .list li { padding-left: 1em; }
+#about article .list a:hover { color: #307D34; }
+
+#about .subtitle { margin: 0; font-size: 15px; color: #DB7037; }
+#about .middleSection { background: #DADADA; }
+
+#about .section1 h2 { margin: 0; }
+#about .section2 h3 , #about .section2 h4 { margin: 0; }
+#about .section2 h3 a { font-size: 18px; font-weight: 600; color: #307D34; transition: all 0.5s; }
+#about .section2 h3 a:hover { color: #DB7037; }
+#about .section2 .subtitle { font-weight: 400; }
+#about .section2 .num { padding: 0.6em 1em; background: #9cc303; border-radius: 100%; color: #fff; }
+#about .section2 .content { width: 85%; }
+#about .section3 img { width: 35%; margin: 0 1em 1em 0; }
+#about .section3 h3 { font-size: 15px; color: #307D34; }
+#about .section4 h2 , #about .section5 h2 { color: #307D34; }
+
+#about .banner { position: relative; min-height: 300px; background: url(img/3.jpg) 0 -19em no-repeat; background-size: cover; }
+#about .banner li:not(.active) { display: none; }
+#about .banner li { padding: 3em 0 0; text-align: center; white-space: pre-line; }
+#about .banner h2 { margin: 0; font-size: 25px; color: #307D34; }
+#about .banner p { margin: 0; font-size: 17px; line-height: 1.7em; color: #F5F5F2; }
+
+#about .toleft ,#about .toright { position: absolute; top: 40%; z-index: 2; width: 50px; height: 65px; opacity: 0.7; background: url(img/4.png) no-repeat; cursor: pointer; }
+#about .toleft { left: 5%; }
+#about .toright { right: 5%; background-position: -50px 0; }
+
+/*events*/
+#events .section1 time { display: block; margin-bottom: 1em; font-size: 15px; color: #0EB831; text-align: right; }
+#events .section1 h3 { font-size: 17px; font-family: 'Roboto Slab', serif; font-weight: 500; }
+#events .section1 span { display: block; color: #9cc303; }
+#events .section1 .more1:hover { background: #5D710E; color: #9cc303; }
+
+#events .section2 { margin-top: 1em; }
+#events .section2-content { width: 66.66666667%; padding: 0 15px; }
+#events .section2-img { width: 33.33333333%; padding: 0 15px; }
+#events .section2 h2 { margin-left: 1em; }
+#events .section2 h3 ,#events .section2 h4 { margin: 0; font-size: 17px; font-family: 'Roboto Slab', serif; font-weight: 500; }
+#events .section2 h4 { color: #9cc303; }
+
+/*galleries*/
+#galleries .imgList { padding: 1em 0.5em; }
+#galleries .imgList li { float: left; height: 216px; cursor: pointer; }
+#galleries .imgList img { height: 100%; }
+
+/*blog*/
+#blog .blogList { width: 100%; }
+#blog .blogList li { margin-bottom: 2em; background: #f0f0f0; }
+
+#blog .blogList-content { padding: 10px; overflow: hidden; }
+#blog .blogList-content h3 { margin: 0; }
+#blog .blogList-content h3 a { font-size: 17px; font-weight: 700; color: #728d09; transition: all 0.5s; }
+#blog .blogList-content h3 a:hover { color: #000; }
+#blog .blogList-content time { display: block; margin: 1em 0; font-size: 12px; color: #9ec503; }
+
+#blog .blogPageList { padding: 0 0 3em 1em ; }
+#blog .blogPageList li { float: left; padding: 6px 0; }
+#blog .blogPageList li.disabled a { cursor: not-allowed; }
+#blog .blogPageList li.active a { background: #9cc303; color: #fff; cursor: default; }
+#blog .blogPageList a { padding: 6px 12px; margin-left: -1px; border: 1px solid #ddd; color: #337ab7; }
+#blog .blogPageList a:hover { background: #eee; color: #23527c; }
+
+/*contact*/
+#contact article h3 ,#contact article h4 { color: #9cc303; }
+#contact .contactForm { width: 66.66666667%; padding: 0 15px; }
+#contact .contactForm form { font-size: 18px; font-family: opensans; color: #5b5b5b; }
+#contact .contactForm input ,#contact .contactForm textarea { padding: 10px 15px; border: 1px solid #000; box-shadow: 1px 1px rgb(139, 135, 135); }
+#contact .contactForm input:not([type="submit"]) { width: 31%; }
+#contact .contactForm input[type="email"] { margin: 0 0.9em; }
+#contact .contactForm input[type="submit"] { width: 21%; background: none; font-size: 16px; transition: all 0.5s; cursor: pointer; }
+#contact .contactForm input[type="submit"]:hover { background: #9cc303; color: #fff; }
+#contact .contactForm textarea { display: block; width: 100%; height: 150px; margin: 1.5em 0 2.5em; font: inherit; }

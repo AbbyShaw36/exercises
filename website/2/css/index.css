@@ -1,0 +1,253 @@
+/**********重置样式************/
+html,body {
+	background-color: #ebebeb;
+	line-height: 1.75em;
+	color: #505050;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+	font-size: 14px;
+}
+ol,ul {
+	list-style: none;
+	padding: 0;
+}
+h1,h2,h3,h4 {
+	margin: 0;
+}
+
+/**********页头**********/
+#main_header {
+	position: relative;
+	background: url(../img/header_bg.jpg) no-repeat center 20%;
+	width: 100%;
+	height: 200px;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#main_header .logo {
+	position: relative;
+	top: 33%;
+	text-align: center;
+}
+#main_header a {
+	display: inline-block;
+	width: 60px;
+	height: 68px;
+}
+
+/**********导航栏**********/
+#main_nav {
+	background-color: #fff;
+	height: 65px;
+	margin-bottom: 35px;
+}
+.nav-toggle-button ,#nav_manu {
+	text-align: center;
+}
+.nav-toggle-button {
+	height: 65px;
+	line-height: 65px;
+	font-size: 2em;
+}
+#nav_manu li ,#nav_manu a {
+	display: inline-block;
+	height: 65px;
+}
+#nav_manu a {
+	padding: 0 20px;
+	line-height: 65px;
+	text-decoration: none;
+	color: #505050;
+}
+#nav_manu a:hover {
+	color: #e67e22;
+}
+#nav_manu .active {
+	border-bottom: 2px solid #e67e22;
+}
+
+/**********主要内容*************/
+article {
+	padding: 35px;
+	margin-bottom: 35px;
+	background-color: #fff;
+}
+article hgroup {
+	text-align: center;
+}
+article h1 a, article h1 a:hover {
+	color: #303030;
+	text-decoration: none;
+}
+article h4 {
+	margin-top: 14px;
+	color: #959595;
+	font-size: 1em;
+}
+article h4 a ,article h4 a:hover {
+	color: #e67e22;
+	margin-right: 5px;
+}
+article p {
+	margin: 30px 0;
+}
+article .read {
+	padding: 10px;
+	background-color: #e67e22;
+	border-radius: 2px;
+	color: #fff;
+	text-decoration: none;
+}
+article .read:hover {
+	background-color: #333;
+}
+article .tag-list {
+	margin-top: 30px;
+	padding-top: 21px;
+	border-top: 1px solid #ebebeb;
+	line-height: 28px;
+	color: #959595;
+}
+article .tag-list a {
+	color: #959595;
+}
+article .tag-list a:hover {
+
+}
+/*******分页*********/
+.pager {
+	margin-bottom: 35px;
+}
+.pager span ,.pager a {
+	padding: 10px 14px;
+	border-radius: 2px;
+	background-color: #e67e22;
+	color: #fff;
+}
+.pager a {
+	text-decoration: none;
+}
+/*********侧边栏***********/
+.widget {
+	background-color: #fff;
+	padding: 21px 30px;
+	margin-bottom: 35px;
+}
+.widget h2 {
+	position: relative;
+	margin-bottom: 21px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #ebebeb;
+	font-size: 1.5em;
+}
+.widget h2:after {
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 90px;
+	height: 1px;
+	background-color: #e67e22;
+	content: "";
+}
+.community a {
+	color: #e67e22;
+}
+.download a {
+	display: block;
+	width: 100%;
+	padding: 7px 14px;
+	border-radius: 2px;
+	background-color: #e67e22;
+	text-align: center;
+	color: #fff;
+}
+.tag-cloud li {
+	display: inline-block;
+	margin: 0 7px 7px 0;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+}
+.tag-cloud a {
+	display: inline-block;
+	padding: 2px 7px;
+	text-decoration: none;
+	color: #959595;
+}
+.tag-cloud a:hover {
+	background-color: #e67e22;
+	color: #fff;
+}
+/***********页脚**************/
+.main_footer_content {
+	padding-top: 35px;
+	background-color: #202020;
+}
+.main_footer_content .widget {
+	background: none;
+}
+.main_footer_content h2 {
+	color: #fff;
+	border-color: #303030;
+}
+.main_footer_content a {
+	color: #959595;
+	text-decoration: none;
+}
+.latest-article li {
+	border-bottom: 1px dashed #303030;
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+}
+.latest-article a ,.latest-article time {
+	display: block;
+}
+.main_footer_content .tag-cloud li {
+	border-color: #303030;
+}
+.friend-links hr {
+	margin: 1em 0;
+	border-top: 1px dashed #303030;
+}
+.copyright {
+	padding: 28px 0;
+	background-color: #111;
+	text-align: center;
+}
+.copyright a {
+	color: #505050;
+}
+/***********返回顶部*************/
+#back-to-top {
+	display: block;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: rgba(230, 126, 34, 0.6);
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+#back-to-top:hover {
+	background: #e67e22;
+}
+/***********媒体查询*************/
+@media screen and (min-width: 768px) {
+	.nav-toggle-button {
+	    display: none;
+	}
+}
+@media screen and ( max-width:767px ) {
+	#main_nav {
+		height: auto;
+	}
+	#nav_manu {
+		text-align: left;
+		background-color: #fff;
+	}
+	#nav_manu li ,#nav_manu a {
+		display: block;
+	}
+}

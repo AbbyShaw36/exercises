@@ -1,0 +1,38 @@
+/*reset*/
+* { box-sizing: border-box ; }
+html ,body { background: #fff; font-size: 100%; font-family: 'Open Sans', sans-serif !important; line-height: 1.42857143; color: #333; }
+body ,h1 ,ul { margin: 0; padding: 0; }
+input { font: inherit; line-height: inherit; }
+ul { list-style: none; }
+a ,a:hover { text-decoration: none; }
+input:focus ,textarea:focus { outline: none; }
+
+/*常规样式*/
+.fl { float: left; }
+.fr { float: right; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.mb-2 { margin-bottom: 2em; }
+.overflow-h { overflow: hidden; }
+.transition { transition: all 0.5s; }
+.borderR-5 { border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; }
+
+.twoColumn-layout ,.threeColumn-layout ,.fourColumn-layout { position: relative; padding: 0 15px; }
+.twoColumn-layout { width: 50%; }
+.threeColumn-layout { width: 33.33333333%; }
+.fourColumn-layout { width: 25%; }
+
+/*整体宽度*/
+@media all and (min-width: 768px) {
+	.container { width: 750px; }
+}
+@media all and (min-width: 992px) {
+	.container { width: 970px; }
+}
+@media all and (min-width: 1200px) {
+	.container { width: 1170px; }
+}
+.container {
+	margin: 0 auto;
+}
