@@ -1,0 +1,91 @@
+/***************
+	reset style
+****************/
+html ,body ,ul { margin: 0; padding: 0; }
+body { font: 16px Myriad Pro , Regular; }
+ul { list-style: none; }
+a { text-decoration: none; }
+input ,textarea { outline: none; }
+
+/***************
+	common style
+****************/
+body { background: #fff; }
+main section { margin-bottom: 6em; }
+.container { width: 1024px; margin: 0 auto; }
+.uppercase {text-transform: uppercase;}
+.botton { padding: 15px 50px; border: 6px solid rgba(26,188,156,0.6); background: #1abc9c; background-clip: padding-box; color: #fff;  }
+
+/***************
+	page style
+***************/
+/*header*/
+#mainHeader { position: relative; z-index: 0; background: #e74c3c; }
+#mainHeader:before { content: ""; position: absolute; z-index: -2; top: 0; left: 0; width: 100%; height: 100%; background: url(img/header_bg.jpg) no-repeat; background-size: cover; opacity: 0.7; }
+#mainHeader:after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; opacity: 0.3; }
+#mainHeader .more { text-align: center; }
+#mainHeader .botton { display: inline-block; margin-bottom: -50%; }
+
+#top { padding-top: 2em; overflow: hidden; }
+#top a { color: #fff; }
+#top .logo { float: left; margin: 0; font-size: 1.4em; font-weight: normal; }
+
+#mainNav { margin: 0; float: right; font-size: 1.2em; }
+#mainNav li { display: inline-block; }
+#mainNav li+li { margin-left: 34px; }
+#mainNav li.active a { color: #1abc9c; }
+#mainNav a:hover { text-decoration: underline; }
+
+#mainHeader-content { width: 80%; margin: 12em auto; text-align: center; color: #fff; }
+#mainHeader-content h1 {border-bottom: 3px solid #fff; font-size: 4em; font-weight: normal; }
+
+/*main*/
+/*section about*/
+.about { padding: 6em 0; overflow: hidden; }
+.about p { color: #95a5a6; }
+.about h2 ,.about h3 { color: #1abc9c; }
+.about h2 ,.about>p { width: 820px; margin: 0 auto; text-align: center; }
+.about h2 { margin-bottom: 40px; font-size: 2.4em; }
+.about>p { margin-bottom: 2em; font-size: 1.2em; line-height: 1.5em; }
+.about li { float: left; width: 270px; }
+.about li+li { margin-left: 100px; }
+.about header { text-align: center; font-size: 1.4em; }
+.about li p { font-size: 1em; line-height: 1.8em; }
+
+/*section work*/
+.work li { position: relative; z-index: 0; width: 428px; height: 326px; float: left; margin-bottom: 2em; background: #e74c3c; }
+.work li:before { position: absolute; z-index: -1; content: ""; width: 100%; height: 100%; background: #fff; opacity: 0.7; }
+.work li:nth-child(2n+1) { margin-right: 16%; }
+.work li>img { position: relative; z-index: -1; width: 100%; height: 100%; opacity: 0.7; }
+.work header { opacity: 0; transition: opacity 0.5s; }
+.work header div { box-sizing: border-box; position: absolute; bottom: 0; width: 100%; padding-left: 20px; background: #1abc9c; background-clip: padding-box; border-top: 6px solid rgba(26,188,156,0.6); }
+.work h3 { margin: 1em 0 0; color: #fff; font-size: 2em; }
+.work p { color: #297465; }
+.work li .botton { position: absolute; top: 0; right: 0; margin-right: 18px; margin-top: 22px; padding: 12px 14px; }
+.work>div { text-align: center; clear: both; padding: 2em 0; }
+.work>div .botton { padding-right: 70px; border: none; background: #1abc9c url(img/arrow.png) 80% no-repeat; }
+
+/*work message visited*/
+.work li:hover header { opacity: 1; }
+
+/*section contact form*/
+.contact fieldset { border: none; padding: 0; }
+.contact legend { display: none; }
+.contact h2 { text-align: center; font-size: 4em; color: #1abc9c; }
+.contact form { width: 820px; margin: 0 auto; }
+.contact input ,.contact textarea { padding: 26px 32px; background: #e4e8e8; border: none; box-sizing: border-box; font: 2em regular; color: #cecece; }
+.contact input { width: 394px; }
+.contact input[name="name"] { float: left; }
+.contact input[name="email"] { float: right; }
+.contact textarea { clear: both; width: 100%; height: 268px; margin-top: 28px; }
+
+/*footer*/
+#mainFooter { float: left; width: 100%; background: #1abc9c; font-size: 1.6em; color: #fff; }
+#mainFooter .link { position: relative; top: -50px; }
+#mainFooter .link div { width: 820px; margin: 0 auto; }
+#mainFooter .link a { display: inline-block; width: 96px; border: 1px solid #1abc9c; background: #fff; background-clip: padding-box; text-align: center; line-height: 96px; }
+#mainFooter .link a:nth-child(2) { margin: 0 256px; }
+#mainFooter .link img { vertical-align: middle; }
+
+#copyright p:first-child { float: left; }
+#copyright p:last-child { float: right; }
