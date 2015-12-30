@@ -12,7 +12,8 @@ input ,textarea { outline: none; }
 ****************/
 body { background: #fff; }
 main section { margin-bottom: 6em; }
-.container { width: 1024px; margin: 0 auto; }
+.container { width: 80%;/*1024px*/ margin: 0 auto; }
+.box { width: 80%;/*820px*/ margin: 0 auto; }
 .uppercase {text-transform: uppercase;}
 .botton { padding: 15px 50px; border: 6px solid rgba(26,188,156,0.6); background: #1abc9c; background-clip: padding-box; color: #fff;  }
 
@@ -44,15 +45,16 @@ main section { margin-bottom: 6em; }
 .about { padding: 6em 0; overflow: hidden; }
 .about p { color: #95a5a6; }
 .about h2 ,.about h3 { color: #1abc9c; }
-.about h2 ,.about>p { width: 820px; margin: 0 auto; text-align: center; }
+.about h2 ,.about>p { text-align: center; }
 .about h2 { margin-bottom: 40px; font-size: 2.4em; }
 .about>p { margin-bottom: 2em; font-size: 1.2em; line-height: 1.5em; }
-.about li { float: left; width: 270px; }
-.about li+li { margin-left: 100px; }
+.about li { float: left; width: 26%;/*270px*/ }
+.about li+li { margin-left: 10%;/*100px*/ }
 .about header { text-align: center; font-size: 1.4em; }
 .about li p { font-size: 1em; line-height: 1.8em; }
 
 /*section work*/
+.work ul { overflow: hidden; }
 .work li { position: relative; z-index: 0; width: 428px; height: 326px; float: left; margin-bottom: 2em; background: #e74c3c; }
 .work li:before { position: absolute; z-index: -1; content: ""; width: 100%; height: 100%; background: #fff; opacity: 0.7; }
 .work li:nth-child(2n+1) { margin-right: 16%; }
@@ -72,9 +74,8 @@ main section { margin-bottom: 6em; }
 .contact fieldset { border: none; padding: 0; }
 .contact legend { display: none; }
 .contact h2 { text-align: center; font-size: 4em; color: #1abc9c; }
-.contact form { width: 820px; margin: 0 auto; }
 .contact input ,.contact textarea { padding: 26px 32px; background: #e4e8e8; border: none; box-sizing: border-box; font: 2em regular; color: #cecece; }
-.contact input { width: 394px; }
+.contact input { width: 48%;/*394px*/ }
 .contact input[name="name"] { float: left; }
 .contact input[name="email"] { float: right; }
 .contact textarea { clear: both; width: 100%; height: 268px; margin-top: 28px; }
@@ -82,10 +83,28 @@ main section { margin-bottom: 6em; }
 /*footer*/
 #mainFooter { float: left; width: 100%; background: #1abc9c; font-size: 1.6em; color: #fff; }
 #mainFooter .link { position: relative; top: -50px; }
-#mainFooter .link div { width: 820px; margin: 0 auto; }
-#mainFooter .link a { display: inline-block; width: 96px; border: 1px solid #1abc9c; background: #fff; background-clip: padding-box; text-align: center; line-height: 96px; }
-#mainFooter .link a:nth-child(2) { margin: 0 256px; }
+#mainFooter .link a { display: block; width: 96px; border: 1px solid #1abc9c; background: #fff; background-clip: padding-box; text-align: center; line-height: 96px; }
+#mainFooter .link a[class="twitter"] { float: left; }
+#mainFooter .link a[class="dribble"] { margin: 0 auto; }
+#mainFooter .link a[class="facebook"] { float: right; }
 #mainFooter .link img { vertical-align: middle; }
 
 #copyright p:first-child { float: left; }
 #copyright p:last-child { float: right; }
+
+/*media*/
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.contact input { width: 100%; }
+	.contact input[name="name"] { margin-bottom: 28px; }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	body { font-size: 12px; }
+	.about li { float: none; width: 100%; }
+	.about li+li { margin-left: 0; }
+	.work li { width: 100%; height: 200px; }
+	.contact .box { width: 100%; }
+	.contact textarea { height: 200px; }
+	#mainFooter .link { top: -25px; }
+	#mainFooter .link a { width: 50px; height: 50px; }
+	#mainFooter .link img { vertical-align: super; }
+}
