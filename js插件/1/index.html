@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<!-- 包装 -->
+<div id="wrapper">
+	<!-- 表单集 -->
+	<div id="steps">
+		<!-- 表单内容 -->
+		<form method="post" action="#" id="infoForm">
+			<!-- 各个模块 -->
+			<fieldset class="step">
+				<legend>用户(Account)</legend>
+				<p>
+					<label for="userName">用户名(User name)</label>
+					<input type="text" name="userName" id="userName">
+				</p>
+				<p>
+					<label for="email">电子邮件(Email)</label>
+					<input type="email" name="email" id="email" placeholder="abc@abc.com">
+				</p>
+				<p>
+					<label for="pw">密码(Password)</label>
+					<input type="password" name="pw" id="pw">
+				</p>
+				<p>
+					<label for="confirmPw">确认密码(Confirm password)</label>
+					<input type="password" name="confirmPw" id="confirmPw">
+				</p>
+			</fieldset>
+			<fieldset class="step">
+				<legend>个人信息(Personal Details)</legend>
+				<p>
+					<label for="name">姓名(Full Name)</label>
+					<input type="text" name="name" id="name">
+				</p>
+				<p>
+					<label for="country">国家(Country)</label>
+					<input type="text" name="country" id="country">
+				</p>
+				<p>
+					<label for="phone">电话(Phone)</label>
+					<input type="tel" name="phone" id="phone" placeholder="+351215555555">
+				</p>
+				<p>
+					<label for="website">网站(Website)</label>
+					<input type="url" name="website" id="website" placeholder="http://t.cn/zOk6slI">
+				</p>
+			</fieldset>
+			<fieldset class="step">
+				<legend>付款(Payment)</legend>
+				<p>
+					<label for="cardType">卡(Card)</label>
+					<select name="cardType" id="cardType">
+						<option value="1">Visa</option>
+						<option value="2">American Express</option>
+					</select>
+				</p>
+				<p>
+					<label for="cardNum">身份证号码(Card number)</label>
+					<input type="number" name="cardNum" id="cardNum">
+				</p>
+				<p>
+					<label for="secure">安全码(Security code)</label>
+					<input type="number" name="secure" id="secure">
+				</p>
+				<p>
+					<label for="nameCard">信用卡持有人名姓(Name on Card)</label>
+					<input type="text" name="nameCard" id="nameCard">
+				</p>
+			</fieldset>
+			<fieldset class="step">
+				<legend>消息(Settings)</legend>
+				<p>
+					<label for="newsletter">通讯(Newsletter)</label>
+					<select name="newsletter" id="newsletter">
+						<option value="day">每天</option>
+						<option value="week">每周</option>
+						<option value="month">每月</option>
+						<option value="never">从不</option>
+					</select>
+				</p>
+				<p>
+					<label for="updates">更新(Updates)</label>
+					<select name="updates" id="updates">
+						<option value="1">方式1(Package 1)</option>
+						<option value="2">方式2(Package 2)</option>
+						<option value="3">方式3(Package 3)</option>
+						<option value="0">不发送更新(Don't send updates)</option>
+					</select>
+				</p>
+				<p>
+					<label for="tagname">通讯标签（Newsletter Tag)</label>
+					<input type="text" name="tagname" id="tagname">
+				</p>
+			</fieldset>
+			<fieldset class="step">
+				<legend>确认(Confirm)</legend>
+				<p>一切形式正确填写的所有步骤，如果有一个绿色的对勾图标。一个红色的对号图标表示，某些领域已丢失或无效数据填写。在这最后一步，用户可以确认的形式提交。</p>
+				<p class="sub">
+					<input type="submit" value="提交">
+				</p>
+			</fieldset>
+			<!-- 各个模块结束 -->
+		</form>
+		<!-- 表单内容结束 -->
+	</div>
+	<!-- 表单集结束 -->
+	<!-- 表单导航 -->
+	<div id="formNav">
+		<ul>
+			<li class="selected"><a href="javascript:0;">账户</a></li>
+			<li><a href="javascript:0;">个人信息</a></li>
+			<li><a href="javascript:0;">付款方式</a></li>
+			<li><a href="javascript:0;">设置</a></li>
+			<li><a href="javascript:0;">确认</a></li>
+		</ul>
+	</div>
+	<!-- 表单导航结束 -->
+</div>
+<!-- 包装结束 -->
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
