@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+#banner {
+	position: relative;
+	min-width: 1000px;
+	height: 303px;
+	overflow: hidden;
+}
+
+#banner_imgList {
+	position: relative;
+	left: 0;
+}
+
+#banner_imgList li {
+	float: left;
+	width: 1500px;
+}
+
+#banner_imgList img {
+	position: relative;
+	width: 100%;
+}
+
+#banner_menu {
+	position: relative;
+	top: -25px;
+	text-align: center;
+}
+
+#banner_menu a {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	z-index: 2;
+}
+
+#banner_menu .active {
+	background: #fff
+}
