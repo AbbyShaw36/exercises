@@ -1,0 +1,40 @@
+#calendar {
+	margin: 10px;
+	text-align: center;
+}
+
+#calendar table {
+	width: 400px;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+#calendar caption {
+	padding: 10px;
+	background: #ccc;
+	color: #fff;
+	font-weight: bolder;
+}
+
+#calendar .l {
+	float: left;
+	cursor: pointer;
+}
+
+#calendar .r {
+	float: right;
+	cursor: pointer;
+}
+
+#calendar th ,#calendar td {
+	padding: 10px 0;
+	border: 1px solid #ccc;
+}
+
+#calendar th {
+}
+
+#calendar .red {
+	color: red;
+}
