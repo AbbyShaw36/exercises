@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>烟花</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			background: #000;
+			overflow: hidden;
+		}
+		div {
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.onclick = function(ev) {
+			var oEvent = ev || event;
+			var oRedDiv = document.createElement("div");
+			var l = oEvent.clientX;
+			var t = oEvent.clientY;
+
+			oRedDiv.style.cssText = "width:4px; height:20px; background:red;";
+			oRedDiv.style.top = document.documentElement.clientHeight + "px";
+			oRedDiv.style.left = l + "px";
+
+			document.body.appendChild(oRedDiv);
+
+			//打烟花（移动红色块）
+			var timer = setInterval(function(){
+				oRedDiv.style.top = oRedDiv.offsetTop - 20 + "px";
+
+				//当它到达鼠标指定点后执行
+				if (oRedDiv.offsetTop <= t) {
+					//停止移动
+					clearInterval(timer);
+					document.body.removeChild(oRedDiv);
+
+					var aDiv = [];
+
+					//创建散出的火花，共50个
+					for (var i = 0; i < 50; i++) {
+						var oDiv = document.createElement("div");
+
+						oDiv.style.cssText = "width:4px; height:4px;";
+						oDiv.style.background = "#" + getColor();
+						oDiv.style.left = l + "px";
+						oDiv.style.top = t + "px";
+
+						document.body.appendChild(oDiv);
+						aDiv.push(oDiv);
+
+						//每个火花都有自己的随机移动速度（垂直和水平）
+						oDiv.speedX = Math.random() * 40 - 20;
+						oDiv.speedY = Math.random() * 40 - 20;
+					};
+
+					//火花移动
+					var newTimer = setInterval(function(){
+						var count = 0;
+
+						for (var i = 0; i < aDiv.length; i++) {
+							//当火花被删除（即已移出可见区域），不再对此火花进行操作（跳出该轮循环）
+							if (!aDiv[i]) {
+								continue;
+							};
+
+							aDiv[i].style.left = aDiv[i].offsetLeft + aDiv[i].speedX + "px";
+							aDiv[i].style.top = aDiv[i].offsetTop + aDiv[i].speedY + "px";
+
+							//竖直速度变大，形成向下坠的效果
+							aDiv[i].speedY++;
+
+							//当火花移出可见区域后删除
+							if (aDiv[i].offsetLeft < 0 || aDiv[i].offsetLeft > document.documentElement.clientWidth || aDiv[i].offsetTop > document.documentElement.clientHeight) {
+								document.body.removeChild(aDiv[i]);
+								aDiv[i] = null;
+							};
+
+							count++;
+						};
+
+						//如果火花还存在，进入循环后count会增加，当count为0时即没有火花存在
+						if (count == 0) {
+							clearInterval(newTimer);
+						};
+					},30);
+
+					//制造闪电效果
+					var lightCount = 0;
+					var flashLight = setInterval(function(){
+						if (lightCount%2) {
+							document.body.style.background = "#ccc";
+						} else {
+							document.body.style.background = "#000";
+						}
+						if (lightCount > 1) {
+							clearInterval(flashLight);
+						};
+						lightCount++;
+					},30);
+				};
+			},30);
+		}
+
+		//随机获取颜色值
+		function getColor() {
+			var str = Math.ceil(Math.random()*0xffffff).toString(16);
+			if (str.length < 6) {
+				str = "0" + str;
+			};
+			return str;
+		}
+	</script>
+</body>
+</html>
