@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>放大镜</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#show {
+			width: 600px;
+			position: relative;
+		}
+		#show .smallImg {
+			float: left;
+			position: relative;
+			float: left;
+			width: 300px;
+			height: 300px;
+		}
+		#show .hover {
+			position: absolute;
+			z-index: 2;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		#show .piece {
+			position: absolute;
+			z-index: 1;
+			display: none;
+			width: 150px;
+			height: 150px;
+			background: #ccc;
+			opacity: 0.8;
+		}
+		#show .smallImg img {
+			width: 100%;
+			height: 100%;
+		}
+		#show .bigImg {
+			float: right;
+			display: none;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+		}
+		#show .bigImg img{
+			position: relative;
+			z-index: 2;
+			width: 600px;
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		三者的大小关系是：
+		大图 = 倍数 * 小图；
+		小图 = 倍数 * 小块；
+		其中的倍数必须相同
+	-->
+	<div id="show">
+		<div class="smallImg">
+			<span class="hover"></span>
+			<span class="piece"></span>
+			<img src="img/small.jpg">
+		</div>
+		<div class="bigImg">
+			<img src="img/big.jpg">
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
