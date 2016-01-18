@@ -56,13 +56,15 @@ window.onload = function() {
 
 				oImgList.appendChild(oImg);
 			};
+			var maxIndex = getMax();
+			oImgList.style.height = arrT[maxIndex] + "px";
 			oLoader.style.display = "none";
 			bBtn = true;
 		};
 	}
 
 	window.onscroll = function() {
-		if (arrT[getMin()] < document.documentElement.clientHeight + document.body.scrollTop) {
+		if (arrT[getMin()] < document.documentElement.clientHeight + document.body.scrollTop + document.documentElement.scrollTop) {
 			getImgRequest();
 		};
 	}
@@ -76,6 +78,20 @@ window.onload = function() {
 				v = arrT[i];
 				_index = i;
 			};
+		};
+
+		return _index;
+	}
+
+	function getMax() {
+		var v = arrT[0];
+		var _index = 0;
+
+		for (var i = 0; i < arrT.length; i++) {
+			if (arrT[i] > v) {
+				v = arrT[i];
+				_index = i;
+			}
 		};
 
 		return _index;
