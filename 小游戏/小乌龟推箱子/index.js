@@ -61,6 +61,7 @@ var Game = {
 	},
 	//创建地图
 	createMap: function() {
+		// 已经到最后一关
 		if (this.iNow == this.gk.length) {
 			alert("You win!");
 			return;
